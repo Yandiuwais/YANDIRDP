@@ -16,7 +16,7 @@ jobs:
     - name: Connect Ngrok.
       run: .\ngrok\ngrok.exe authtoken 2Ba5LYMm8n1jztyoyakx6AAshyo_7MrYvVyxySJvgNfaXNQRA
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+        NGROK_AUTH_TOKEN: ${{ secrets.2Ba5LYMm8n1jztyoyakx6AAshyo_7MrYvVyxySJvgNfaXNQRA }}
     - name: Windows10 RDP.
       run: |
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
